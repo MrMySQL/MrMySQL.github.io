@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Multi Stream for Twitch</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="streams,multistreams,multi streams,twitch,twitchtv,starcraft,league,leagues,starladder,TI3,the internation 3,international,the internation" />
+    <meta name="description" content="Multi Stream for Twitch - multistream.com.ua" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="jquery-ui-1.10.3.custom.css" rel="stylesheet">
+    <script src="index.js"></script>
+    <script src="jquery.cookie.js"></script>
+</head>
+<body>
+<div id="menu">
+    <a class="button" href="http://multistream.com.ua/">Streams List</a>
+    <a class="button" href="mailto:belyalovreshat@gmail.com?subject=Multistream%20Feedback">Request Feature</a>
+    <a class="button autoplay" href="#"></a>
+</div>
+<form id="form" method="get" action="show.html">
+    <div id="columns_container">
+
+        <div id="div1" class="ui-widget-content ui-corner-all box opacity90"></div>
+        <div id="div2" class="ui-widget-content ui-corner-all box opacity90"></div>
+        <div id="div3" class="ui-widget-content ui-corner-all box opacity90" style="display: none;"></div>
+        <div id="div4" class="ui-widget-content ui-corner-all box opacity90" style="display: none;"></div>
+        <img id="addcol" src="http://icons.iconarchive.com/icons/iconarchive/red-orb-alphabet/128/Math-plus-icon.png" style="float: left; border: 0; clear: right; margin-top: 220px; cursor: pointer;" class="ui-widget-content ui-corner-all opacity90" title="Add Stream">
+        <div style="text-align: center; clear: both;" id="forbuttons">
+            <input type="submit" id="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" value="Watch Streams">
+        </div>
+    </div>
+    <div id="dialog-message" title="Select streams">
+        <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Please, select at least two streams to continue.</p>
+    </div>
+</form>
+
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-41262282-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+</body>
+</html>

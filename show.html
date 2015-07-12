@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi Stream for Twitch</title>
+    <meta charset="UTF-8" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="jquery-ui-1.10.3.custom.css" rel="stylesheet">
+    <script src="jquery.cookie.js"></script>
+    <script src="show.js"></script>
+</head>
+<body>
+<div style="float: right;">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ru" data-size="large">Твитнуть</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+<div id="menu">
+    <a class="button" href="http://multistream.com.ua/">Streams List</a>
+    <a class="button" href="mailto:belyalovreshat@gmail.com?subject=Multistream%20Feedback">Request Feature</a>
+    <a class="button autoplay" href="#"></a>
+</div>
+<div id="streams_container">
+    <div id="stream1" class="stream ui-widget-content ui-corner-all"></div>
+    <div id="stream2" class="stream ui-widget-content ui-corner-all"></div>
+    <div id="chat1" class="stream ui-widget-content ui-corner-all chat"></div>
+    <div id="chat2" class="stream ui-widget-content ui-corner-all chat"></div>
+    <div id="stream3" class="stream ui-widget-content ui-corner-all"></div>
+    <div id="stream4" class="stream ui-widget-content ui-corner-all"></div>
+    <div id="chat3" class="stream ui-widget-content ui-corner-all chat"></div>
+    <div id="chat4" class="stream ui-widget-content ui-corner-all chat"></div>
+</div>
+
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-41262282-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+</body>
+</html>
