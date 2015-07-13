@@ -33,7 +33,7 @@ function getStreams(div, game) {
     showLoader(div);
     game = game.replace(' ', '+');
     $.ajax({
-        url: 'https://api.twitch.tv/kraken/streams?game='+game+'&embeddable=true&callback=?',
+        url: 'https://api.twitch.tv/kraken/streams?game='+game+'&callback=?',
         type: 'POST',
         dataType: 'json',
         success: function(data) {
@@ -41,7 +41,7 @@ function getStreams(div, game) {
                 type: 'text',
                 name: 'stream' + div.attr('id').substr(div.attr('id').length - 1),
                 placeholder: 'Enter another channel',
-                size: 29
+                size: 26
             });
             $.each(data.streams, function (key, stream) {
                 div.append(
